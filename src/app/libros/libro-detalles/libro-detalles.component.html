@@ -1,0 +1,20 @@
+<p>libro-detalles works!</p>
+
+<div class="container" *ngIf="libro != undefined">
+    
+    <ul class="list-group-horizontal">
+      <li class="list-group-item active">Detalles de libro</li>
+      <li class="list-group-item">Identificador: {{libro.id}}</li>
+      <li class="list-group-item">Titulo: {{libro.titulo}}</li>
+      <li class="list-group-item">Autor: {{libro.autor}}</li>
+    </ul>
+    
+    <ul class="list-group">
+      <li class="list-group-item active"><h4>Informacion adicional: </h4></li>
+      
+      <li class="list-group-item" routerLink='imagenes'>Imagenes</li>
+      <li class="list-group-item" routerLink='opiniones'>Opiniones</li>
+    </ul>
+
+    <router-outlet></router-outlet>
+</div>

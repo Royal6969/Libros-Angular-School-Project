@@ -1,0 +1,9 @@
+<p>libro-imagenes works!</p>
+
+<p>
+    (Imagenes del libro con identificador: {{idLibro}})
+</p>
+
+<div class="container mt-3" *ngIf="libro != undefined">
+    <img src="../../../{{ libro.imagen }}" alt="imagen-del-libro">
+</div>

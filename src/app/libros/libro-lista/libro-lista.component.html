@@ -1,0 +1,21 @@
+<p>libro-lista works!</p>
+
+<h4>Libros:</h4>
+
+<div class="container">
+    <ul class="list-group-horizontal">
+        <li class="list-group-item active">
+            LIBROS
+        </li>
+    
+        <li 
+            class="list-group-item"
+            *ngFor="let libro of libros"
+        >
+            <!-- <a [routerLink]="['/libros', libro.id]"> -->
+            <a [routerLink]="['libros', libro.id]">
+                {{ libro.titulo }}
+            </a>
+        </li>
+    </ul>
+</div>

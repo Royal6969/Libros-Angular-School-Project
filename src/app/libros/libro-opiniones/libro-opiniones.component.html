@@ -1,0 +1,9 @@
+<p>libro-opiniones works!</p>
+
+<div class="container" *ngIf="opiniones != null" >
+    <ul class="list-group" *ngFor="let opinion of opiniones">
+      <li class="list-group-item">{{opinion.titulo}}</li>
+      <li class="list-group-item">{{opinion.descripcion}}</li>
+    </ul>
+</div>
+  
